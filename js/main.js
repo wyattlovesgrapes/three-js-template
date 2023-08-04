@@ -8,6 +8,19 @@ import isMobile from 'is-mobile';
 
 console.log(isMobile());
 
+// Get the target element where you want to render the text
+const outputElement = document.getElementById('output');
+
+// Create a new paragraph element
+const paragraphElement = document.createElement('p');
+
+// Set the text content for the paragraph element
+paragraphElement.textContent = isMobile();
+
+// Append the paragraph element to the output element
+outputElement.appendChild(paragraphElement);
+
+
 //Declare main scene components
 let camera, renderer, clock;
 
